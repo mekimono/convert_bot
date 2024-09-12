@@ -1,11 +1,10 @@
-from aiogram.utils.keyboard import ReplyKeyboardBuilder, InlineKeyboardBuilder
+from aiogram.utils.keyboard import InlineKeyboardBuilder
 from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
 
 start_markup = InlineKeyboardMarkup(inline_keyboard=[
     [InlineKeyboardButton(text='Конвертировать', callback_data='convert')]
 ])
-
 
 keyboard_markup = InlineKeyboardBuilder()
 

@@ -2,7 +2,7 @@ import asyncio
 from aiogram import Bot, Dispatcher, F
 from aiogram import types
 from aiogram import filters
-import app.keyboard as kb
+import keyboard as kb
 from config import TOKEN
 import aspose.words as aw
 from aiogram.fsm.state import StatesGroup, State
@@ -15,6 +15,7 @@ dp = Dispatcher()
 
 # class StatesGroup является классом состояний необходимых для хранения информации
 # создавая экземпляры основываясь на том, какую информацию мы хотим хранить
+
 class ConvertState(StatesGroup):
     # ID файла нам необходимо, чтобы скачать данный файл на носитель
     file_id = State()
